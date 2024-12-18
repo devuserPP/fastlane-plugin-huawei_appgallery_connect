@@ -13,7 +13,7 @@ This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To 
 ```rake install```
 
 3. Install
-```gem install /pkg/fastlane-plugin-huawei_appgallery_connect-1.0.33.gem```
+```gem install --local ./pkg/fastlane-plugin-huawei_appgallery_connect-1.0.33.gem```
 
 ## About huawei_appgallery_connect
 
