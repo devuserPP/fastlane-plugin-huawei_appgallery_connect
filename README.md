@@ -6,9 +6,14 @@
 
 This project is a [_fastlane_](https://github.com/fastlane/fastlane) plugin. To get started with `fastlane-plugin-huawei_appgallery_connect`, add it to your project by running:
 
-```bash
-fastlane add_plugin huawei_appgallery_connect
-```
+1. Clone
+```git clone https://github.com/devuserPP/fastlane-plugin-huawei_appgallery_connect.git```
+
+2. Build
+```rake install```
+
+3. Install
+```gem install /pkg/fastlane-plugin-huawei_appgallery_connect-1.0.33.gem``
 
 ## About huawei_appgallery_connect
 
@@ -113,6 +118,16 @@ huawei_appgallery_connect_set_gms_dependency(
 )
 ```
 
+
+all supported languages:
+https://developer.huawei.com/consumer/en/doc/AppGallery-connect-References/agcapi-reference-langtype-0000001158245079
+
+crating folder structure:
+```
+mkdir -p fastlane/metadata/huawei/{en-US,fil,lt,hr,lv,no-NO,zh-CN,el-GR,nl-NL,uk,kn_IN,ug_CN,hi-IN,pa_Guru_IN,id,mk-MK,ur,ja-JP,hu-HU,te_IN,ne-NP,ka-GE,uz,ms,ta_IN,am_ET,eu-ES,et,ar,pl-PL,pt-PT,vi,tr-TR,fa,fr-FR,ro,en-GB,km-KH,fi-FI,az-AZ,be,bg,mr_IN,gl-ES,jv,mai_Deva_IN,mn_MN,bo,sw_TZ,he_IL,or_IN,bs,si-LK,my-MM,sk,sl,lo-LA,cs-CZ,iw-IL,ca,as_IN,sr,kk,de-DE,zh-TW,zh-HK,ko-KR,pt-BR,es-ES,te_TE,it-IT,ru-RU,bn-BD,th,gu_IN,sv-SE,ml_IN,am-ET,da-DK,es-419,mi_NZ}
+```
+
+
 Your folder structure for applying multiple languages for the metadata should look like this:
 
 ```
@@ -124,6 +139,18 @@ Your folder structure for applying multiple languages for the metadata should lo
             │   └── app_description.txt
             │   └── introduction.txt
             │   └── release_notes.txt
+            ├── images
+                ├── screenshots
+                │    ├── phone
+                │    │    ├── screenshot1.png
+                │    │    └── screenshot2.png
+                │    │    └── screenshot3.png
+                │    └── tablet
+                │    │   ├── screenshot1.png
+                │    │   └── screenshot2.png
+                │    │   └── screenshot3.png
+                └── icon.png
+
             └── fr-FR
                 ├── app_name.txt
                 └── app_description.txt
